@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans>
+
+
+
+    <bean id ="dao" class="com.chenmingjun.dao.UserDaoImpl">
+
+
+    </bean>
+
+    <bean id="service" class="com.chenmingjun.service.UserServiceImpl">
+        <property ref="dao"></property>
+    </bean>
+
+</beans>>
