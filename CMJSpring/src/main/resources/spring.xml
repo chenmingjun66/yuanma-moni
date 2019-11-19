@@ -8,7 +8,15 @@
     </bean>
 
     <bean id="service" class="com.chenmingjun.service.UserServiceImpl">
+
+<!--
+        &lt;!&ndash;set方式进行依赖注入&ndash;&gt;
         <property name="dao" ref="dao"></property>
+-->
+
+        <!--构造方法的方式进行依赖注入-->
+        <constructor-arg name="dao" ref="dao"></constructor-arg>
+
     </bean>
 
 </beans>
