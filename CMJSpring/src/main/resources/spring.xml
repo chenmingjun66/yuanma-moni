@@ -5,12 +5,10 @@
 
 
     <bean id ="dao" class="com.chenmingjun.dao.UserDaoImpl">
-
-
     </bean>
 
     <bean id="service" class="com.chenmingjun.service.UserServiceImpl">
-        <property ref="dao"></property>
+        <property name="dao" ref="dao"></property>
     </bean>
 
-</beans>>
+</beans>
